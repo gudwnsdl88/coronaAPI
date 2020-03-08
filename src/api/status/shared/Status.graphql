@@ -1,0 +1,7 @@
+type Status {
+  confirmation: Int!
+  release: Int!
+  dead: Int!
+  inspection: Int!
+  date: String!
+}

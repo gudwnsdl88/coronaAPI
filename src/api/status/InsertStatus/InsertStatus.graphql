@@ -1,0 +1,8 @@
+type InsertStatusResponse {
+  ok: Boolean!
+  error: String
+}
+
+type Mutation {
+  InsertStatus: InsertStatusResponse!
+}

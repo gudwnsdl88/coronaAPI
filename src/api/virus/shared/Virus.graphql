@@ -1,0 +1,7 @@
+type Virus {
+  id: Int!
+  lng: Float!
+  lat: Float!
+  address: String!
+  createdAt: String!
+}

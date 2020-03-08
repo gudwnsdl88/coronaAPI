@@ -1,0 +1,7 @@
+type Route {
+  id: Int!
+  infectedNo: Int!
+  routeLat: [Float]!
+  routeLng: [Float]!
+  routeAddress: [String]!
+}

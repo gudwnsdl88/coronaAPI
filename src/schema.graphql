@@ -1,0 +1,49 @@
+type Route {
+  id: Int!
+  infectedNo: Int!
+  routeLat: [Float]!
+  routeLng: [Float]!
+  routeAddress: [String]!
+}
+
+type InsertStatusResponse {
+  ok: Boolean!
+  error: String
+}
+
+type Mutation {
+  InsertStatus: InsertStatusResponse!
+}
+
+type RecentStatusResponse {
+  ok: Boolean!
+  error: String
+  result: [Status]
+}
+
+type Query {
+  RecentStatus: RecentStatusResponse!
+  AllVirus: AllVirusResponse!
+}
+
+type Status {
+  confirmation: Int!
+  release: Int!
+  dead: Int!
+  inspection: Int!
+  date: String!
+}
+
+type AllVirusResponse {
+  ok: Boolean!
+  error: String
+  virus: [Virus]
+}
+
+type Virus {
+  id: Int!
+  lng: Float!
+  lat: Float!
+  address: String!
+  createdAt: String!
+}

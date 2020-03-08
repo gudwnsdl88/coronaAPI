@@ -1,0 +1,9 @@
+type RecentStatusResponse {
+  ok: Boolean!
+  error: String
+  result: [Status]
+}
+
+type Query {
+  RecentStatus: RecentStatusResponse!
+}

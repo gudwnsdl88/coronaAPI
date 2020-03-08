@@ -1,0 +1,9 @@
+type AllVirusResponse {
+  ok: Boolean!
+  error: String
+  virus: [Virus]
+}
+
+type Query {
+  AllVirus: AllVirusResponse!
+}
